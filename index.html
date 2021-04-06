@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <!--Css-->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!--Java Script-->
+    <script type="text/javascript" src="codigo.js"></script>
+    <title>Dia 0</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col col-sm-12 col-md-12">
+          <h3>DIA 0</h3>
+        </div>
+        <div class="col col-sm-12 col-md-12">
+          <h3>Lexical Structure</h3>
+        </div>
+        <div class="col col-sm-12 col-md-6">
+          <h5>Comments:</h5>
+          <b>//</b> Delante de una línea de código cambia las líneas de código
+          de una línea ejecutable a un comentario. <br /><br />
+          JavaScript ignorará cualquier texto entre <b>/*</b> y
+          <b>*/</b> (Bloque de comentarios).
+          <br />
+        </div>
+        <div class="col col-sm-12 col-md-6">
+          <h5>Literals:</h5>
+          Los literales representan valores en JavaScript. Estos son valores
+          fijos, no variables. Tipo: null literal, booleanos literales,
+          literales numericos, objetos literales, arreglos literales, cadenas
+          literales.
+          <br /><br />
+          let variable = <b>contenido</b>;
+          <br />
+          En este ejemplo <b>contenido</b> es un literal (Valor fijo).
+        </div>
+        <div class="col col-sm-12 col-md-12">
+          <h3>Identifiers and Reserved Words</h3>
+        </div>
+        <div class="col col-sm-12 col-md-6">
+          <h5>Reserved Words</h5>
+          JavaScript reserva una serie de identificadores como palabras clave
+          del propio idioma.
+        </div>
+        <div class="col col-sm-12 col-md-6">
+          <h5>Ejemplos</h5>
+          break, case, catch, class, const, continue, debugger, default (en-US),
+          delete, do, else, export, extends, finally, for, function, if, import,
+          in, instanceof new, return, super, switch, this, throw, try, typeof,
+          var, void, while, with, yield.
+        </div>
+        <div class="col col-sm-12 col-md-12">
+          <h3>Types, Values and Variables</h3>
+        </div>
+        <div class="col col-sm-12 col-md-6">
+          <h5>Integer Literals</h5>
+          Los enteros se pueden expresar en binario (base 2), en octal (base 8),
+          en decimal (base 10) y hexadecimal (base 16).
+        </div>
+        <div class="col col-sm-12 col-md-6">
+          Decimal: 0-9
+          <br />
+          Octal: Inicia con 0 y va de 0-7
+          <br />
+          hexadecimal: Inicia con 0x y va de 0-9 con los caracteres a-f o A-F
+        </div>
+        <div class="col col col-sm-6 col-md-6">
+          <h5>Floating-Point Literals</h5>
+          Expresan valores numericos que contiene decimales, pueden estar
+          compuestos por:
+          <br />
+          Enteros que puede estar precedidos por:
+          <br />
+          El simbolo "+" o "-"
+          <br />
+          Un simbolo "." expresa el valor decimal
+          <br />
+          Se compone de una fraccion
+          <br />
+          Puede tener un exponente
+        </div>
+        <div class="col col-sm-6 col-md-6">
+          <h5>Ejemplo</h5>
+          var Ejem = 3.1416;
+          <br />
+          var Ejem = 3.1E12
+          <br />
+          var Ejem = .1e12
+        </div>
+        <div class="col col-sm-6 col-md-6">
+          <h5>Arithmetic in JS</h5>
+          + = Edicion
+          <br />
+          - = Sustraccion
+          <br />
+          * = Multiplicacion
+          <br />
+          / = Division
+          <br />
+          % = Modulo
+          <br />
+          ++ = Incremento
+          <br />
+          -- = Decremento
+        </div>
+        <div class="col col-sm-6 col-md-6">
+          <h5>Ejemplo</h5>
+          Literales: var Ejem = 100 + 50;
+          <br />
+          Variables: var Ejem = a - b;
+          <br />
+          Expresiones: var Ejem = (100 + 50) * a;
+        </div>
+        <div class="col col-sm-6 col-md-6">
+          <h5>Arbitrary Precision Integers with BigInt</h5>
+          Es una nueva primitiva de JavaScript que puede representar numeros
+          enteros con precision arbitraria a diferencia de la primitiva Numero
+          que solo puede almacenar de forma segura valores enteros hasta 2 ^ 53.
+        </div>
+        <div class="col col-sm-6 col-md-6">
+          <h5>Sintaxis</h5>
+          Numero(Normal) = 156 BigInt = 156n
+          <h5>Conversion</h5>
+          const aBigInt = 11n;
+          <br />
+          const aNumber = 156;
+          <br />
+          const aBigInt = BigInt(aNumber);
+          <br />
+          aBigInt === 156n // true
+          <br />
+          parseFloat()y parseInt()también puede convertir un BigInt en un
+          Número.
+        </div>
+        <div class="col col-sm-12 col-md-12">
+          <h3>DIA 1</h3>
+        </div>
+        <div class="col col-sm-12 col-md-12">
+          <h3>Text</h3>
+        </div>
+        <div class="col col-sm-12 col-md-12">
+          <h5>String Literals</h5>
+          Es una secuencia de caracteres del conjunto de caracteres de origen
+          entre comillas dobles. Se utilizan para representar una secuencia de
+          caracteres que forman una cadena terminada en nulo.
+        </div>
+        <div class="col col-sm-12 col-md-6">
+          <h5>Escape Sequences in String Literals</h5>
+          No se representa a sí misma cuando se usa dentro de un carácter o
+          literal de cadena , pero se traduce a otro carácter o una secuencia de
+          caracteres que puede ser difícil o imposible de representar
+          directamente.
+        </div>
+        <div class="col col-sm-12 col-md-6">
+          <h5>Ejemplo</h5>
+          \b = retroceso <br />\f = alineacion de formulario <br />\n = avance
+          de linea <br />\r = retorno de carro <br />\t = tabulacion horizontal
+          <br />\v = pestaña vertical <br />\0 = caracter nulo <br />\' =
+          comilla simple <br />\" = comilla doble <br />\\ = barra invertida
+        </div>
+        <div class="col col-sm-12 col-md-6">
+          <h5>Working with Strings</h5>
+          Todo es un objeto en JavaScript y cuando creas una cadena tu variable
+          se convierte en una instancia del objeto cadena y como resultado tiene
+          una gran cantidad de propiedades y metodos disponibles
+        </div>
+        <div class="col col-sm-12 col-md-6">
+          <h5>Se pueden relizar las siguientes operaciones con una cadena</h5>
+          1- Encontrar la longitud de una cadena 2- Extraer un caracter
+          especifico de una cadena 3- Encontrar una subcadena dentro de una
+          cadena y extraerla 4- Cambiando todo a mayusculas o minusculas 5-
+          Actulaizar partes de una cadena
+          https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Useful_string_methods
+        </div>
+        <div class="col col-sm-12 col-md-6">
+          <h5>Template Literals</h5>
+          ES2015, también conocido como ES6, Template Literals ofrece una nueva
+          forma de declarar cadenas, pero también algunas construcciones nuevas
+          e interesantes que ya son muy populares. <br />
+          Solo use comillas inversas en lugar de comillas simples o dobles:
+        </div>
+        <div class="col col-sm-12 col-md-6">
+          Antes de ES6:
+          <br />
+          const string = <br />
+          'first part \ <br />
+          second part' <br /><br />
+          Con ES6: <br />const string = `Hey <br />
+          this
+
+          <br />
+          string <br />
+          is awesome!`
+        </div>
+        <div class="col col-sm-12 col-md-12">
+          <h5>Pattern Matching</h5>
+          La coincidencia de patrones es una forma de ramificación condicional
+          que le permite hacer coincidir de forma concisa patrones de estructura
+          de datos y vincular variables al mismo tiempo
+        </div>
+        <div class="col col-sm-12 col-md-6">
+          <h5>Boolean Values</h5>
+          - Solo puede tomar los valores verdadero o falso . <br />
+          - Todo lo que tiene un "valor" es verdadero
+        </div>
+        <div class="col col-sm-12 col-md-6">
+          <h5>Ejemplo con Operadores</h5>
+          if (day == "Monday") <br />
+          if (salary > 9000) <br />
+          if (age < 18)
+        </div>
+        <div class="col col-sm-12 col-md-6">
+          <h5>Null and Undefined</h5>
+          Undefined es declarar una variable pero no asignarle un valor <br />
+          Null es un valor de asignación, es una representacion sin valor
+        </div>
+        <div class="col col-sm-12 col-md-6">
+          <h5>Ejemplo</h5>
+          UNDEFINED <br />
+          var testVar; <br />
+          alert(testVar); se muestra undefined <br />
+          alert(typeof testVar); se muestra undefined
+          <br />
+          <br />
+          NULL <br />
+          var testVar = null; <br />
+          alert(testVar); se muestra null<br />
+          alert(typeof testVar); se muestra null
+        </div>
+        <div class="col col-sm-12 col-md-12">
+          <h5>Symbols</h5>
+          Es un tipo de datos cuyos valores son únicos e immutables. Dichos
+          valores pueden ser utilizados como identificadores (claves) de las
+          propiedades de los objetos. Cada valor del tipo Symbol tiene asociado
+          un valor del tipo String o Undefined que sirve únicamente como
+          descripción del símbolo.
+        </div>
+        <div class="col col-sm-12 col-md-12">
+          <h3>DIA 2</h3>
+        </div>
+        <div class="col col-sm-12 col-md-12">
+          <h5>Types, Values, and Variables</h5>
+        </div>
+        <div class="col col-sm-12 col-md-12">
+          <h5>Type Conversions</h5>
+          1- Conversión de cadenas (La conversión de cadenas ocurre cuando
+          necesitamos la forma de cadena de un valor.)
+          <br />
+          2- Conversión numérica (La conversión numérica ocurre en funciones y
+          expresiones matemáticas automáticamente.)
+          <br />
+          3- Conversión booleana (Ocurre en operaciones lógicas (más adelante
+          veremos pruebas de condición y otras cosas similares) pero también se
+          puede realizar explícitamente con una llamada a Boolean(value).
+          <br />
+          La regla de conversión: Los valores que son intuitivamente “vacío”,
+          como 0, una cadena vacía, null, undefined, y NaN, se hacen false. Se
+          vuelven otros valores true.) https://javascript.info/type-conversions
+        </div>
+        <div class="col col-sm-12 col-md-6">
+          <h5>Explicit Conversions</h5>
+          En JavaScript, las conversiones de tipos explícitos se realizan
+          mediante métodos integrados.
+          <br />
+          Para convertir cadenas numéricas y valores booleanos en números, puede
+          usar Number().
+        </div>
+        <div class="col col-sm-12 col-md-6">
+          <h5>Tipos de conversiones</h5>
+          1- Convertir a número explícitamente <br />
+          2- Convertir a cadena explícitamente <br />
+          3- Convertir a booleano explícitamente <br />
+          https://www.programiz.com/javascript/type-conversion
+        </div>
+        <div class="col col-sm-12 col-md-6">
+          <h5>Object to Primitive Conversions</h5>
+          JavaScript proporciona formas integradas para convertir entre objetos
+          y valores primitivos, mediante métodos especiales toStringy valueOf.
+        </div>
+        <div class="col col-sm-12 col-md-6">
+          Existen 5 tipos de valores primitivos: <br />
+          Nulo : el valor null. <br />
+          Indefinido : el valor undefined. <br />
+          Número : todos los números, como 0y 3.14. Además NaN, y Infinity.
+          <br />
+          Booleano : los valores truey false. <br />
+          Cadena : todas las cadenas, como "foo"y "".
+        </div>
+        <div class="col col-sm-12 col-md-6">
+          <h5>Declarations with let and const</h5>
+          TypeScript sigue las mismas reglas que JavaScript para declaraciones
+          de variables. Las variables pueden ser declaradas usando: var, let, y
+          const.
+        </div>
+        <div class="col col-sm-12 col-md-6">
+          LET : Las variables declaradas con let tienen un alcance de bloque.
+          <br />
+          (El alcance de las variables let se limita a su bloque contenedor).
+          <br /><br />
+          CONST : La constante hace que una variable sea una constante donde
+          <br />
+          su valor no se puede cambiar. Las variables const tienen las mismas
+          <br />
+          reglas de alcance que las variables let.
+          https://www.tutorialsteacher.com/typescript/typescript-variable
+        </div>
+        <div class="col col-sm-12 col-md-12">
+          <h5>Variable Declarations with var</h5>
+          Las var declaraciones son accesibles en cualquier lugar dentro de su
+          función contenedora, módulo, espacio de nombres o alcance global.
+        </div>
+        <div class="col col-sm-12 col-md-6">
+          <h5>Destructuring Assignment</h5>
+          Es una expresión de JavaScript que permite descomprimir valores de
+          matrices, o propiedades de objetos, en distintas variables, los datos
+          se pueden extraer de matrices, objetos, objetos anidados y asignar a
+          variables .
+        </div>
+        <div class="col col-sm-12 col-md-12">
+          <h3>DIA 3</h3>
+        </div>
+        <div class="col col-sm-12 col-md-12">
+          <h5>Primary Expressions:</h5>
+          Las expresiones primarias en JavaScript son valores constantes o
+          literales , ciertas palabras clave de lenguaje y referencias a
+          variables.
+        </div>
+        <div class="col col-sm-12 col-md-6">
+          <h5>Object and Array Initializers:</h5>
+          Los inicializadores de objetos y matrices son expresiones cuyo valor
+          es un objeto o matriz recién creado. Estas expresiones de
+          inicializador a veces se denominan "literales de objeto" y "literales
+          de matriz".
+        </div>
+        <div class="col col-sm-12 col-md-6">
+          <h5>Array Initializers:</h5>
+          Un inicializador de matriz es una lista de expresiones separadas por
+          comas contenidas entre corchetes. El valor de un inicializador de
+          matriz es una matriz recién creada. Los elementos de esta nueva matriz
+          se inicializan con los valores de las expresiones separadas por comas
+          <br />
+          <h5>Object Initializers:</h5>
+          son como expresiones de inicializador de matriz , pero los corchetes
+          se reemplazan por corchetes, y cada subexpresión tiene como prefijo un
+          nombre de propiedad y dos puntos
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
