@@ -108,25 +108,25 @@ function comparisonOperators(opcion) {
   var str = "5";
   if (opcion == "igualDebil") {
     var label = "resultadoComparacionDeb";
-    resultado = (num == str);
+    resultado = num == str;
   } else if (opcion == "igualFuerte") {
     var label = "resultadoComparacionFue";
-    resultado = (num === str);
+    resultado = num === str;
   } else if (opcion == "diferenteDebil") {
     var label = "resultadoDiferenteDeb";
-    resultado = (num != str);
+    resultado = num != str;
   } else if (opcion == "diferenteFuerte") {
     var label = "resultadoDiferebteFue";
-    resultado = (num !== str);
+    resultado = num !== str;
   } else if (opcion == "mayorQue") {
     var label = "resultadoMayorQ";
-    resultado = (num > num2);
+    resultado = num > num2;
   } else if (opcion == "menorQue") {
     var label = "resultadoMenorQ";
-    resultado = (num < num2);
+    resultado = num < num2;
   } else if (opcion == "mayorIgualQ") {
     var label = "resultadoMayorIgualQ";
-    resultado = (num >= num2);
+    resultado = num >= num2;
   } else {
     var label = "resultadoMenorIgualQ";
   }
@@ -134,18 +134,22 @@ function comparisonOperators(opcion) {
   document.getElementById(label).innerHTML = resultado;
 }
 
-function logicalAnd(){
+function logicalExpressions(opcion) {
+  var logicalExp = opcion;
   var num1 = 5;
   var num2 = 5;
   var num3 = 6;
   var num4 = 3;
 
-  if(num1 == num2 && num2 < num3 ){
-
-  }else if(num1 > num3 || num2 == num3){
-
-  }else{
-
+  if (num1 == num2 && logicalExp == "AND") {
+    var label1 = "resultadoAnd";
+    var resultadoLE = "True";
+  } else if (num3 < num2 || logicalExp == "OR" ) {
+    var label1 = "resultadoOr";
+    var resultadoLE = "True";
+  } else {
+    var label1 = "resultadoNot";
+    var resultadoLE = ( !true );
   }
-
+  document.getElementById(label1).innerHTML = resultadoLE;
 }

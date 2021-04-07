@@ -207,14 +207,26 @@
         <div class="col col-sm-12 col-md-12 text-center">
           <h2>Logical Expressions</h2>
         </div>
-        <div class="col col-sm-12 col-md-4 d-flex justify-content-center">
+        <div class="col col-sm-12 col-md-3 d-flex justify-content-center">
+          Donde: num1 = 5 / num2 = 5 / num3 = 6 / num4 = 3
+        </div>
+        <div class="col col-sm-12 col-md-3">
           <h2>AND(&&)</h2>
+          num1 == num2 && logicalExp == "AND"
+          <input type="button" value="=" onclick="logicalExpressions('AND')" />
+          <label id="resultadoAnd"></label>
         </div>
-        <div class="col col-sm-12 col-md-4 d-flex justify-content-center">
+        <div class="col col-sm-12 col-md-3">
           <h2>OR(||)</h2>
+          num3 > num4 || logicalExp == "OR"
+          <input type="button" value="=" onclick="logicalExpressions('OR')" />
+          <label id="resultadoOr"></label>
         </div>
-        <div class="col col-sm-12 col-md-4 d-flex justify-content-center">
+        <div class="col col-sm-12 col-md-3">
           <h2>NOT(!)</h2>
+          true
+          <input type="button" value="=" onclick="logicalExpressions('NOT')" />
+          <label id="resultadoNot"></label>
         </div>
       </div>
     </div>
