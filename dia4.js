@@ -1,7 +1,3 @@
-/*DIA 4
-ARITHMETIC EXPRESSIONS
-- The + Operator
-*/
 function masNumerico() {
   var numero1 = document.getElementById("numero1").value;
   var numero2 = document.getElementById("numero2").value;

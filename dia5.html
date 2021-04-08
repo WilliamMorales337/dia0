@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <!--Css-->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!--Java Script-->
+    <script type="text/javascript" src="dia5.js"></script>
+
+    <title>Dia 5</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col col-sm-12 col-md-12 text-center">
+          <h2>Evaluation Expressions</h2>
+        </div>
+        <div class="col col-sm-12 col-md-6">
+          Donde : x = 10 / y = 20 <br />
+          Ejemplo 1: a = x * y
+          <input type="button" value="=" onclick="ejemplo1EE('ejemp1')" />
+          <label id="resultadoEjemplo1EE"></label><br /><br />
+          Ejemplo 2: b = x + 17
+          <input type="button" value="=" onclick="ejemplo1EE('ejemp2')" />
+          <label id="resultadoEjemplo2EE"></label>
+        </div>
+        <div class="col col-sm-12 col-md-12 text-center">
+          <h2>The Conditional Operator (?:)</h2>
+        </div>
+        <div class="col col-sm-12 col-md-6">
+          <label>PI > 4</label>
+          <input type="button" value="=" onclick="condOpe('ejemplo1')" />
+          <label id="resultadoConOpe"></label>
+        </div>
+        <div class="col col-sm-12 col-md-6">
+          <label>Donde: Revision 1 = Denegada / Revision 2 = Denegada</label>
+          <input type="button" value="=" onclick="condOpe('ejemplo2')" />
+          <label id="resultadoConOpe2"></label>
+        </div>
+        <div class="col col-sm-12 col-md-12 text-center">
+          <h2>First-Defined (??)</h2>
+        </div>
+        <div class="col col-sm-12 col-md-6">
+          <label>Donde: variableUno = null / variableDos = cadena</label> <br />
+          <label>variableUno ?? variableDos</label>
+          <input type="button" value="=" onclick="firstDef('ejemplo1')" />
+          <label id="resultadoFirstDef"></label>
+        </div>
+        <div class="col col-sm-12 col-md-6">
+          <label>Donde: variableTres = 0 / variableCuatro = 42</label> <br />
+          <label>variableUno ?? variableDos</label>
+          <input type="button" value="=" onclick="firstDef('ejemplo2')" />
+          <label id="resultadoFirstDef2"></label>
+        </div>
+        <div class="col col-sm-12 col-md-12 text-center">
+          <h2>The typeof Operator</h2>
+        </div>
+        <div class="col col-sm-12 col-md-4">
+          <label>Donde: "Hola"</label>
+          <input type="button" value="=" onclick="typeOpe('Stri')" />
+          <label id="resultadoTypOpeStrin"></label>
+        </div>
+        <div class="col col-sm-12 col-md-4">
+          <label>Donde: 50</label>
+          <input type="button" value="=" onclick="typeOpe('Num')" />
+          <label id="resultadoTypOpeNum"></label>
+        </div>
+        <div class="col col-sm-12 col-md-4">
+          <label>Donde: Otro</label>
+          <input type="button" value="=" onclick="typeOpe('Unden')" />
+          <label id="resultadoTypOpeInde"></label>
+        </div>
+        <div class="col col-sm-12 col-md-12 text-center">
+          <h2>The delete Operator</h2>
+        </div>
+        <div class="col col-sm-12 col-md-12">
+          <label
+            >Donde: Primer Nombre es William / Segundo Nombre es Morales / Edad 24 años</label
+          >
+          <input type="button" value="=" onclick="deleteOpe()" />
+          <label id="resultadoDeleteOpe"></label>
+          <label id="resultadoDeleteOpe2"></label>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
