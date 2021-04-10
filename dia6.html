@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <!--Css-->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!--Java Script-->
+    <script type="text/javascript" src="dia6.js"></script>
+
+    <title>Dia 6</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col col-sm-12 col-md-12 text-center">
+          <h2>Conditionals</h2>
+        </div>
+        <div class="col col-sm-12 col-md-12 d-flex justify-content-center">
+          <form>
+            Numero1
+            <br />
+            <input id="numero1" type="number" />
+            <br />
+            Numero2
+            <br />
+            <input id="numero2" type="number" />
+            <br /><br />
+            <input
+              type="button"
+              value="Calcular"
+              onclick="conditionals()"
+            /><br />
+            <label>Es mayor el numero :</label
+            ><label id="resultadoConditionalMa"></label> <br />
+            <label>Es menor el numero : </label
+            ><label id="resultadoConditionalMe"></label> <br />
+            <label></label>Los numeros:
+            <label id="resultadoConditionalI"> </label>
+          </form>
+        </div>
+        <div class="col col-sm-12 col-md-12 d-flex justify-content-center">
+          <input
+            type="button"
+            value="Fruta"
+            onclick="swit('Fruta')"
+          /><br />
+          <input
+            type="button"
+            value="Verdura"
+            onclick="swit('Verdura')"
+          /><br />
+          <label id="resultadoSwit"></label>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+</html>
