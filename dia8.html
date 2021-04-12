@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+    <!--Css-->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!--Java Script-->
+    <script type="text/javascript" src="dia8.js"></script>
+
+    <title>Dia 6</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col col-sm-12 col-md-12 text-center">
+                <h2>Object Literals</h2>
+            </div>
+            <div class="col col-sm-12 col-md-12 text-center">
+                <input type="button" value="Ver" onclick="objLit()" />
+                <label>Contenido del Object:</label>
+                <label id="resultadoObjLit"></label>
+            </div>
+            <div class="col col-sm-12 col-md-12 text-center">
+                <h2>Creating Objects with new </h2>
+            </div>
+            <div class="col col-sm-12 col-md-12 text-center">
+                <input type="button" value="Ver" onclick="objNew()" />
+                <label>Contenido del Object New:</label>
+                <label id="resultadoObjNew"></label>
+            </div>
+            <div class="col col-sm-12 col-md-12 text-center">
+                <h2>Object create ()</h2>
+            </div>
+            <div class="col col-sm-12 col-md-12 text-center">
+                <input type="button" value="Ver" onclick="objCreate()" />
+                <label>Contenido del Object create ():</label>
+                <label id="resultadoObjCrea"></label> 
+            </div>
+            <div class="col col-sm-12 col-md-12 text-center">
+                <h2>Objects As Associative Arrays</h2>
+            </div>
+            <div class="col col-sm-12 col-md-12 text-center">
+                <input type="button" value="Ver" onclick="objArray()" />
+                <label>Contenido del Object Associative:</label>
+                <label id="resultadoObjArray"></label> 
+            </div>
+        </div>
+</body>
+
+</html>
