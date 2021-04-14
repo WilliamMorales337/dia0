@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <!--Css-->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!--Java Script-->
+    <script type="text/javascript" src="dia9.js"></script>
+
+    <title>Dia 9</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col col-sm-12 col-md-12 text-center">
+          <h2>The toString() Method</h2>
+        </div>
+        <div class="col col-sm-12 col-md-1 text-center">
+          <label>Donde el numero es 213</label>
+        </div>
+        <div class="col col-sm-12 col-md-3 text-center">
+          <h4>Base 2</h4>
+          <input type="button" value="Ver" onclick="strMethod('baseD')" />
+          <label id="resultadoBaseD"></label>
+        </div>
+        <div class="col col-sm-12 col-md-4 text-center">
+          <h4>Base 8</h4>
+          <input type="button" value="Ver" onclick="strMethod('baseO')" />
+          <label id="resultadoBaseO"></label>
+        </div>
+        <div class="col col-sm-12 col-md-4 text-center">
+          <h4>Base 16</h4>
+          <input type="button" value="Ver" onclick="strMethod('baseDs')" />
+          <label id="resultadoBaseDs"></label>
+        </div>
+        <div class="col col-sm-12 col-md-12 text-center">
+          <h2>The toLocaleString</h2>
+        </div>
+        <div class="col col-sm-12 col-md-2 text-center">
+          <label
+            >El método toLocaleString () convierte un objeto Date en una
+            cadena.</label
+          >
+        </div>
+        <div class="col col-sm-12 col-md-5 text-center">
+          <h4>Date con the to local String</h4>
+          <input type="button" value="Ver" onclick="localString('conLocStr')" />
+          <label id="resultadoLocalStringCon"></label>
+        </div>
+        <div class="col col-sm-12 col-md-5 text-center">
+          <h4>Date sin the to local String</h4>
+          <input type="button" value="Ver" onclick="localString('sinLocStr')" />
+          <label id="resultadoLocalStringSin"></label>
+        </div>
+        <div class="col col-sm-12 col-md-12 text-center">
+          <h2>Shorthand Properties</h2>
+        </div>
+        <div class="col col-sm-12 col-md-12 text-center">
+          <h4>El operador ternario</h4>
+        </div>
+        <div class="col col-sm-12 col-md-5 text-center">
+          if (x > 10) {<br />
+          answer = "greater than 10";<br />
+          } else {<br />
+          answer = "less than 10";<br />
+          }
+        </div>
+        <div class="col col-sm-12 col-md-7 text-center">
+          <h5>if</h5>
+          const answer = x > 10 ? "greater than 10" : "less than 10";
+          <h5>if anidado</h5>
+          const answer = x > 10 ? "greater than 10" : x < 5 ? "less than 5" :
+          "between 5 and 10" ;
+        </div>
+        <div class="col col-sm-12 col-md-12 text-center">
+          <h4>Taquigrafía de evaluación de cortocircuitos</h4>
+        </div>
+        <div class="col col-sm-12 col-md-6 text-center">
+          if (variable1 !== null || variable1 !== undefined || variable1 !== '')
+          { let variable2 = variable1; }
+        </div>
+        <div class="col col-sm-12 col-md-6 text-center">
+          const variable2 = variable1 || 'new';
+        </div>
+        <div class="col col-sm-12 col-md-12 text-center">
+          <h4>Declaración abreviada de variables</h4>
+        </div>
+        <div class="col col-sm-12 col-md-6 text-center">
+          let x;<br />
+          let y;<br />
+          let z = 3;
+        </div>
+        <div class="col col-sm-12 col-md-6 text-center">let x, y, z=3;</div>
+        <div class="col col-sm-12 col-md-12 text-center">
+          <h4>Taquigrafía de presencia</h4>
+        </div>
+        <div class="col col-sm-12 col-md-6 text-center">
+          if (likeJavaScript === true)
+        </div>
+        <div class="col col-sm-12 col-md-6 text-center">
+          if (likeJavaScript)
+        </div>
+        <div class="col col-sm-12 col-md-12 text-center">
+          <h4>Taquigrafía de bucle</h4>
+        </div>
+        <div class="col col-sm-12 col-md-6 text-center">
+          const fruits = ['mango', 'peach', 'banana'];<br />
+          for (let i = 0; i < fruits.length; i++)
+        </div>
+        <div class="col col-sm-12 col-md-6 text-center">
+          for (let fruit of fruits)
+        </div>
+        <div class="col col-sm-12 col-md-12 text-center">
+          <h4>Propiedad de objeto</h4>
+        </div>
+        <div class="col col-sm-12 col-md-6 text-center">
+          const x = 1920, y = 1080; const obj = { x:x, y:y };
+        </div>
+        <div class="col col-sm-12 col-md-6 text-center">
+          const obj = { x, y };
+        </div>
+        <div class="col col-sm-12 col-md-12 text-center">
+          <h4>Flecha taquigrafía</h4>
+        </div>
+        <div class="col col-sm-12 col-md-6 text-center">
+          function sayHello(name) {<br />
+          console.log('Hello', name);<br />
+          }<br /><br />
+
+          setTimeout(function() {<br />
+          console.log('Loaded')<br />
+          }, 2000);<br /><br />
+
+          list.forEach(function(item) {<br />
+          console.log(item);<br />
+          });
+        </div>
+        <div class="col col-sm-12 col-md-6 text-center">
+          sayHello = name => console.log('Hello', name);<br /><br />
+
+          setTimeout(() => console.log('Loaded'), 2000);<br /><br />
+
+          list.forEach(item => console.log(item));
+        </div>
+        <div class="col col-sm-12 col-md-12 text-center">
+          <h4>Retorno implícito</h4>
+        </div>
+        <div class="col col-sm-12 col-md-6 text-center">
+          function calcCircumference(diameter) {<br />
+          return Math.PI * diameter<br />
+          }
+        </div>
+        <div class="col col-sm-12 col-md-6 text-center">
+          calcCircumference = diameter => (<br />
+          Math.PI * diameter;<br />
+          )
+        </div>
+        <div class="col col-sm-12 col-md-12 text-center">
+          <h4>Symbols as Property Names</h4>
+        </div>
+        <div class="col col-sm-12 col-md-3 text-center">
+          <label>Donde: Variable 1 = id / Variable 2 = id</label>
+        </div>
+        <div class="col col-sm-12 col-md-9 text-center">
+          <label>Variable 1</label>
+          <input type="button" value="comparar" onclick="simProNam()" />
+          <label>Variable 2 = </label>
+          <label id="resultadoBaseD"></label>
+        </div>
+        <div class="col col-sm-12 col-md-12 text-center">
+          <h4>Shorthand Methods</h4>
+        </div>
+        <div class="col col-sm-12 col-md-6 text-center">
+          const x = 20; <br />
+          let answer: <br />
+          if(x > 10){ <br />
+          answer = 'is greater'; <br />
+          } else { <br />
+          answer = 'is lesser'; <br />
+          }
+        </div>
+        <div class="col col-sm-12 col-md-6 text-center">
+          const answer = x > 10 ? 'is greater' : 'is lesser';
+        </div>
+        <div class="col col-sm-12 col-md-12 text-center">
+          <h4>Property Getters and Setters</h4>
+        </div>
+        <div class="col col-sm-12 col-md-12 text-center">
+          <input type="button" value="Ver" onclick="getSet('baseD')" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
