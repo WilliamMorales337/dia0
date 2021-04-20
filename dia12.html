@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <!--Css-->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!--Java Script-->
+    <script type="text/javascript" src="dia12.js"></script>
+
+    <title>Dia 12</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col col-sm-12 col-md-12 text-center">
+          <h2>Function Declarations VS Function Expressions</h2>
+        </div>
+        <div class="col col-sm-12 col-md-6 text-center">
+          <h5>Function Expressions</h5>
+          var askk = function () { <br />
+          if (respuesta == "yes") { <br />
+          showOk(); <br />
+          } else { <br />
+          showCancel(); <br />
+          } <br />
+          };<br />
+          <input type="button" value="Buscar" onclick="askk('yes')" />
+        </div>
+        <div class="col col-sm-12 col-md-6 text-center">
+          <h5>Function Declarations</h5>
+          function ask(respuesta) {<br />
+          if (respuesta == "no") {<br />
+          showOk();<br />
+          } else {<br />
+          showCancel();<br />
+          }<br />
+          }<br />
+          <input type="button" value="Buscar" onclick="ask('no')" />
+        </div>
+        <div class="col col-sm-12 col-md-12 text-center">
+          <h5>Arrow Functions</h5>
+          <input type="button" value="Saludar" onclick="saludar('william')" />
+          <input type="button" value="Sumar" onclick="multiplicar('5','6')" />
+        </div>
+        <div class="col col-sm-12 col-md-12 text-center">
+          <h5>Nested Functions</h5>
+          <input type="button" value="Decorar" onclick="imprimirDec('HOLA')" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

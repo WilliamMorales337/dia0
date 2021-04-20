@@ -56,6 +56,83 @@
           <h4>Array.some ()</h4>
           <input type="button" value="ver" onclick="arrForEach('aSome')" />
         </div>
+        <div class="col col-sm-12 col-md-12 text-center">
+          <h2>Flattening arrays with flat() and flatMap()</h2>
+        </div>
+        <div class="col col-sm-12 col-md-6 text-center">
+          <input type="button" value="ver" onclick="arrFlatFlatMap('aFlat')" />
+        </div>
+        <div class="col col-sm-12 col-md-6 text-center">
+          <input type="button" value="ver" onclick="arrFlatFlatMap('aFlatMap')" />
+        </div>
+        <div class="col col-sm-12 col-md-12 text-center">
+          <h2> Adding arrays with concat() </h2>
+        </div>
+        <div class="col col-sm-12 col-md-6 text-center">
+          <h4>Concat 2 arrays</h4>
+          <input type="button" value="ver" onclick="arrConcat('two')" />
+        </div>
+        <div class="col col-sm-12 col-md-6 text-center">
+          <h4>Concat 3 arrays</h4>
+          <input type="button" value="ver" onclick="arrConcat('three')" />
+        </div>
+        <div class="col col-sm-12 col-md-12 text-center">
+          <h2>Stacks and Queues with push(), pop(), shift(), and unshift() </h2>
+        </div> 
+        <div class="col col-sm-12 col-md-7 text-center">
+          <form>
+            <label>Agregar producto al principo : </label>
+            <input id="inputAgregarP" type="text" />
+            <input
+              type="button"
+              value="Agregar"
+              onclick="stackAgregarP()"
+            />
+          </form>
+          <br>
+          <form>
+            <label>Agregar producto al final : </label>
+            <input id="inputAgregar" type="text" />
+            <input
+              type="button"
+              value="Agregar"
+              onclick="stackAgregar()"
+            /> <br><br>
+            <input
+              type="button"
+              value="Eliminar Primer Producto"
+              onclick="stackEliminarP()"
+            />
+            <input
+              type="button"
+              value="Eliminar Segundo Producto"
+              onclick="stackEliminarU()"
+            />
+            
+          </form>
+        </div>
+        <div class="col col-sm-12 col-md-5 text-center">
+          <label>Numero de productos:</label><br>
+          <label id="labelNumeroProductos"></label>
+        </div>
+        <div class="col col-sm-12 col-md-6 text-center">
+          <label>Listado de productos:</label><br>
+          <label id="labelListado"></label>
+        </div>
+        <div class="col col-sm-12 col-md-6 text-center">
+          <form>
+          <label>Buscar producto numero:</label>
+          <input id="bucarProducto" type="number" />
+          <input
+              type="button"
+              value="Buscar"
+              onclick="slice()"
+            />
+          <label>El produto es:</label>
+          <label id="imprimirProducto"></label>
+          
+          </form>
+        </div>
     </div>
   </body>
 </html>
