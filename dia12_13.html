@@ -17,7 +17,7 @@
     <!--Css-->
     <link rel="stylesheet" type="text/css" href="style.css" />
     <!--Java Script-->
-    <script type="text/javascript" src="dia12.js"></script>
+    <script type="text/javascript" src="dia12_13.js"></script>
 
     <title>Dia 12</title>
   </head>
@@ -28,7 +28,7 @@
         <div class="col col-sm-12 col-md-12 text-center">
           <h2>Function Declarations VS Function Expressions</h2>
         </div>
-        <div class="col col-sm-12 col-md-6 text-center">
+        <div class="col col-sm-12 col-md-4 text-center">
           <h5>Function Expressions</h5>
           var askk = function () { <br />
           if (respuesta == "yes") { <br />
@@ -37,9 +37,9 @@
           showCancel(); <br />
           } <br />
           };<br />
-          <input type="button" value="Buscar" onclick="askk('yes')" />
+          <input type="button" value="Buscar" onclick="funExp('yes')" />
         </div>
-        <div class="col col-sm-12 col-md-6 text-center">
+        <div class="col col-sm-12 col-md-4 text-center">
           <h5>Function Declarations</h5>
           function ask(respuesta) {<br />
           if (respuesta == "no") {<br />
@@ -48,7 +48,21 @@
           showCancel();<br />
           }<br />
           }<br />
-          <input type="button" value="Buscar" onclick="ask('no')" />
+          <input type="button" value="Buscar" onclick="funDec('no')" />
+        </div>
+        <div class="col col-sm-12 col-md-4 text-center">
+          <h5>Function anonymous</h5>
+          const saludo = function () {<br />
+            return "Hola";<br />
+          };<br />
+          <input type="button" value="Buscar" onclick="funObj()" />
+        </div>
+        <div class="col col-sm-12 col-md-4 text-center">
+          <h5>callbacks</h5>
+          const saludo = function () {<br />
+            return "Hola";<br />
+          };<br />
+          <input type="button" value="Buscar" onclick="fA()" />
         </div>
         <div class="col col-sm-12 col-md-12 text-center">
           <h5>Arrow Functions</h5>
@@ -59,6 +73,11 @@
           <h5>Nested Functions</h5>
           <input type="button" value="Decorar" onclick="imprimirDec('HOLA')" />
         </div>
+        <div class="col col-sm-12 col-md-12 text-center">
+          <h5>Closures</h5>
+          <input type="button" value="Probar" onclick="" />
+          <label id="resultadoMiContador"></label>
+        </div> 
       </div>
     </div>
   </body>
